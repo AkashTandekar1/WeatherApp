@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.WeatherParent{
+  background: url("https://www.accuweather.com/images/hero/4/1440x450.jpg");
+  height: 50vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.Weather_Name{
   color: white;
+  font-weight: 50%;
+  font-size: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.Weather_card{
+  height: 50vh;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather_info{
+   border: 1px solid;
+   width: 300px;
+   padding: 80px;
+   box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);;
+   text-align: center;
+
+}
+
+.weather_info_icon{
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  margin-bottom: 20px;
 }
